@@ -1,0 +1,18 @@
+{
+    "model": {
+        "dataset": "mnist",
+        "configs": [
+            [12, 64, 2],
+            [16, 64, 2],
+            [20, 64, 2]
+        ],
+        "encoding_bits": 2,
+        "output": "example.pt",
+        "dropout_p": 0.0,
+        "epochs": 100,
+        "decay_lr": true
+    },
+    "pruning_ratio": 0.3,
+    "uniform_pruning": true,
+    "compress_input": false
+}

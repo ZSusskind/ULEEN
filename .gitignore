@@ -1,0 +1,9 @@
+env/
+data/
+*.swp
+*.pt
+*.bds
+*.pickle.lzma
+software_model/build/
+__pycache__/
+rtl/sv_srcs/
