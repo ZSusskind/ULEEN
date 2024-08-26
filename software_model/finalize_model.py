@@ -153,6 +153,8 @@ def get_unused_inputs(model, inputs):
                     if input_idx < inputs: # Need to worry about zero padding at end...
                         used[input_idx] = 1
 
+    # TODO: Handling unused inputs is currently buggy, so this is a workaround
+    used = np.ones(inputs)
     unused_inputs = np.where(used == 0)[0]
     input_remap = np.zeros(max_input+1, dtype=int)
     input_idx = 0

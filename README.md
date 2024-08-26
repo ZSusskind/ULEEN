@@ -6,15 +6,17 @@ Code to accompany the paper:
 
 *Published in [ACM Transactions on Architecture and Code Optimization (TACO)](https://dl.acm.org/doi/10.1145/3629522)*
 
-For questions, please contact ZSusskind *(at)* gmail *(dot)* com 
-*(I'm graduating soon, and may not be regularly checking my utexas email past that point)*
+For questions, please contact ZSusskind *(at)* gmail *(dot)* com (or utexas *(dot)* edu).
+
+**I've graduated now and am not actively maintaining this repository; however, you should check out the [DWN](https://github.com/alanbacellar/DWN) repository, which *is* actively maintained and is superior to ULEEN in every way.**
 
 ### Beta Release
 This code has been rewritten and cleaned up to remove the considerable amount of "research-grade" jank that was present in my development repository. However, there may be some oversights that were made in this process. Please bear with me on this, and contact me if you encounter any bugs or strange behaviors.
 
 **Known issues:**
  - The code for preprocessing the ToyADMOS and KWS datasets is currently absent. This is partially due to licensing concerns, since I pulled some of the code for this from other repositories. In the meantime, you can download preprocessed datasets directly from [my personal website](https://zsknd.com/misc/preprocessed_data/).
- - JSON files to replicate specific models from the paper are missing. I'll try to get these added soon. In the mean time, you can take a look at the provided `example.json` file.
+ - JSON files to replicate specific models from the paper are missing. In the mean time, you can take a look at the provided `example.json` file.
+ - I seem to have introduced a regression in the unused input pruning in `finalize_model.py` when I was cleaning up the code. I've disabled this for now. 
 
 ## Installation
 This code was written for Python 3.8.10; other versions are untested. For compatibility, I suggest using [PyEnv](https://github.com/pyenv/pyenv) if needed.
